@@ -512,7 +512,7 @@ var Icon$x = function (props) {
 
 var Icon$y = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 205 205" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: '/images/egg/logo.png' })));
+        React__default['default'].createElement("image", { width: "205", height: "205", href: '/images/egg/logo.png' })));
 };
 
 var Icon$z = function (props) {
