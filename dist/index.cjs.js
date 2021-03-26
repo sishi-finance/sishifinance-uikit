@@ -2054,11 +2054,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "https://exchange.sishi.finance",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "https://exchange.sishi.finance/#/pool",
             },
         ],
     },
