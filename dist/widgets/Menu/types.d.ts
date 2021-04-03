@@ -22,6 +22,7 @@ export interface MenuSubEntry {
     label: string;
     href: string;
     calloutClass?: string;
+    newTab?: boolean;
 }
 export interface MenuEntry {
     label: string;
@@ -30,6 +31,7 @@ export interface MenuEntry {
     href?: string;
     calloutClass?: string;
     initialOpenState?: boolean;
+    newTab?: boolean;
 }
 export interface PanelProps {
     isDark: boolean;
