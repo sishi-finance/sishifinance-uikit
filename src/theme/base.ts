@@ -31,10 +31,14 @@ export const shadows = {
 const spacing: Spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 
 const radii = {
-  small: "4px",
-  default: "16px",
-  card: "32px",
-  circle: "50%",
+  small: "0px",
+  default: "0px",
+  card: "0px",
+  circle: "0px",
+  // small: "4px",
+  // default: "16px",
+  // card: "32px",
+  // circle: "50%",
 };
 
 const zIndices = {

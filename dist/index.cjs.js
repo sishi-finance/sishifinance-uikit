@@ -1549,10 +1549,10 @@ var shadows = {
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
-    small: "4px",
-    default: "16px",
-    card: "32px",
-    circle: "50%",
+    small: "0px",
+    default: "0px",
+    card: "0px",
+    circle: "0px",
 };
 var zIndices = {
     dropdown: 10,
