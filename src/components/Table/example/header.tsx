@@ -7,14 +7,14 @@ const StyledTh = styled.th`
   color: #8f80ba;
 
   &:first-child {
-    border-top-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding-left: 16px;
   }
 
   &:last-child {
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     padding-right: 16px;
   }
 `;
