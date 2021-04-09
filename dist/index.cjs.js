@@ -1988,7 +1988,7 @@ var Icon$11 = function (props) {
 
 var Icon$12 = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-        React__default['default'].createElement("image", { width: "24", height: "24", href: "/images/egg/vault.png" })));
+        React__default['default'].createElement("image", { width: "24", height: "24", href: "/images/egg/vault.svg" })));
 };
 
 var IconModule = /*#__PURE__*/Object.freeze({
