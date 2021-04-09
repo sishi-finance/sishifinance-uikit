@@ -42,5 +42,6 @@ export { default as SearchIcon } from "./Icons/Search";
 export { default as SwapVertIcon } from "./Icons/SwapVert";
 export { default as SyncAltIcon } from "./Icons/SyncAlt";
 export { default as WarningIcon } from "./Icons/Warning";
+export { default as Vault } from "./Icons/Vault";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
