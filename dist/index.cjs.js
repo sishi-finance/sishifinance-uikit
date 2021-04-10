@@ -838,20 +838,30 @@ var _a;
 var style = (_a = {},
     _a[sizes$1.MD] = {
         fontSize: "20px",
+        fontSizeLg: "20px",
     },
     _a[sizes$1.LG] = {
         fontSize: "24px",
+        fontSizeLg: "24px",
     },
     _a[sizes$1.XL] = {
-        fontSize: "40px",
+        fontSize: "32px",
+        fontSizeLg: "40px",
     },
     _a[sizes$1.XXL] = {
-        fontSize: "64px",
+        fontSize: "48px",
+        fontSizeLg: "64px",
     },
     _a);
-var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  ", "\n  font-weight:600;\n  line-height: 1.1;\n"], ["\n  ", "\n  font-weight:600;\n  line-height: 1.1;\n"])), function (_a) {
+var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
     var size = _a.size;
-    return style[size || sizes$1.MD];
+    return style[size || sizes$1.MD].fontSize;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.lg;
+}, function (_a) {
+    var size = _a.size;
+    return style[size || sizes$1.MD].fontSizeLg;
 });
 Heading.defaultProps = {
     as: tags.H2,
