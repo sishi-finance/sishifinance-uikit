@@ -2176,21 +2176,27 @@ var links = [
     },
 ];
 var socials = [
-    {
-        label: "Discord",
-        icon: "DiscordIcon",
-        href: "https://discord.com/invite/aGQsMxmZbK",
-    },
-    {
-        label: "Telegram",
-        icon: "TelegramIcon",
-        href: "https://t.me/sishi_finance",
-    },
-    {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/0xsishi",
-    },
+// {
+//   label: "Discord",
+//   icon: "DiscordIcon",
+//   href: "https://discord.com/invite/aGQsMxmZbK",
+//   // items: [
+//   //   {
+//   //     label: "English",
+//   //     href: "https://t.me/sishi_finance",
+//   //   },
+//   // ],
+// },
+// {
+//   label: "Telegram",
+//   icon: "TelegramIcon",
+//   href: "https://t.me/sishi_finance",
+// },
+// {
+//   label: "Twitter",
+//   icon: "TwitterIcon",
+//   href: "https://twitter.com/0xsishi",
+// },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;

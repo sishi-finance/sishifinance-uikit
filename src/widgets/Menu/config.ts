@@ -114,27 +114,27 @@ export const links = [
 ];
 
 export const socials = [
-  {
-    label: "Discord",
-    icon: "DiscordIcon",
-    href: "https://discord.com/invite/aGQsMxmZbK",
-    // items: [
-    //   {
-    //     label: "English",
-    //     href: "https://t.me/sishi_finance",
-    //   },
-    // ],
-  },
-  {
-    label: "Telegram",
-    icon: "TelegramIcon",
-    href: "https://t.me/sishi_finance",
-  },
-  {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/0xsishi",
-  },
+  // {
+  //   label: "Discord",
+  //   icon: "DiscordIcon",
+  //   href: "https://discord.com/invite/aGQsMxmZbK",
+  //   // items: [
+  //   //   {
+  //   //     label: "English",
+  //   //     href: "https://t.me/sishi_finance",
+  //   //   },
+  //   // ],
+  // },
+  // {
+  //   label: "Telegram",
+  //   icon: "TelegramIcon",
+  //   href: "https://t.me/sishi_finance",
+  // },
+  // {
+  //   label: "Twitter",
+  //   icon: "TwitterIcon",
+  //   href: "https://twitter.com/0xsishi",
+  // },
 ];
 
 export const MENU_HEIGHT = 64;
