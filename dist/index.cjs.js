@@ -2643,7 +2643,7 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: true },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(Flex, null,
-                React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); }, style: { height: "24px", padding: "0 15px" } },
+                React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); }, style: { height: "24px", padding: "0 5px", marginRight: "10px" } },
                     React__default['default'].createElement(Flex, { alignItems: "center" },
                         React__default['default'].createElement(Icon$U, { color: isDark ? "textDisabled" : "text", width: "18px" }),
                         React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),

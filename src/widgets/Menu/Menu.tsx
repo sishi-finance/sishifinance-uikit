@@ -124,7 +124,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
-          <Button variant="text" onClick={() => toggleTheme(!isDark)} style={{height:"24px", padding:"0 15px"}}>
+          <Button variant="text" onClick={() => toggleTheme(!isDark)} style={{height:"24px", padding:"0 5px", marginRight:"10px"}}>
             {/* alignItems center is a Safari fix */}
             <Flex alignItems="center">
               <SunIcon color={isDark ? "textDisabled" : "text"} width="18px" />

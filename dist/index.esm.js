@@ -2631,7 +2631,7 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: true },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(Flex, null,
-                React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); }, style: { height: "24px", padding: "0 15px" } },
+                React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); }, style: { height: "24px", padding: "0 5px", marginRight: "10px" } },
                     React.createElement(Flex, { alignItems: "center" },
                         React.createElement(Icon$U, { color: isDark ? "textDisabled" : "text", width: "18px" }),
                         React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
