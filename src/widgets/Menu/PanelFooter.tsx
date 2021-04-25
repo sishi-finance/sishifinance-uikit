@@ -81,7 +81,7 @@ const PanelFooter: React.FC<Props> = ({
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold>SISHI: {`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
@@ -111,8 +111,7 @@ const PanelFooter: React.FC<Props> = ({
         </Flex>
       </SocialEntry>
       <SettingsEntry>
-        <Button variant="text" onClick={() => toggleTheme(!isDark)}>
-          {/* alignItems center is a Safari fix */}
+        {/* <Button variant="text" onClick={() => toggleTheme(!isDark)}>
           <Flex alignItems="center">
             <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
             <Text color="textDisabled" mx="4px">
@@ -120,8 +119,8 @@ const PanelFooter: React.FC<Props> = ({
             </Text>
             <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
           </Flex>
-        </Button>
-        <Dropdown
+        </Button> */}
+        {/* <Dropdown
           position="top-right"
           target={
             <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
@@ -140,7 +139,7 @@ const PanelFooter: React.FC<Props> = ({
               {lang.language}
             </MenuButton>
           ))}
-        </Dropdown>
+        </Dropdown> */}
       </SettingsEntry>
     </Container>
   );

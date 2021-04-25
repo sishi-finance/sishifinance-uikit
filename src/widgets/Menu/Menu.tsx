@@ -10,6 +10,9 @@ import UserBlock from "./UserBlock";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import Avatar from "./Avatar";
+import { Button } from "../../components/Button";
+import { MoonIcon, SunIcon } from "./icons";
+import { Text } from "../../components/Text";
 
 const Wrapper = styled.div`
   position: relative;
@@ -121,8 +124,18 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
+          <Button variant="text" onClick={() => toggleTheme(!isDark)}>
+            {/* alignItems center is a Safari fix */}
+            <Flex alignItems="center">
+              <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
+              <Text color="textDisabled" mx="4px">
+                /
+            </Text>
+              <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
+            </Flex>
+          </Button>
           <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
+          {/* {profile && <Avatar profile={profile} />} */}
         </Flex>
       </StyledNav>
       <BodyWrapper>
