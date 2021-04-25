@@ -23,3 +23,4 @@ export { default as LayerIcon } from "./Layer";
 export { default as RoadmapIcon } from "./Roadmap";
 export { default as VaultIcon } from "./Vault";
 export { default as DiscordIcon } from "./Discord";
+export { default as GitbookIcon } from "./Gitbook";
