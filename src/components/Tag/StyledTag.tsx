@@ -11,9 +11,9 @@ const getThemeTextColor = ({ outline, variant = "primary", theme,color }: Themed
 
 export const StyledTag = styled.div<ThemedProps>`
   align-items: center;
-  background-color: ${({ outline, theme, variant = "primary" }) =>
-    outline ? "transparent" : getColor(variant, theme)};
-  border: 2px solid ${({ variant = "primary", theme }) => getColor(variant, theme)};
+  background-color: ${({ outline, theme, color, variant = "primary" }) =>
+    outline ? "transparent" : (color ?? getColor(variant, theme))};
+  border: 2px solid ${({ variant = "primary", theme, color }) => (color ?? getColor(variant, theme))};
   border-radius: 0px;
   color: ${getThemeTextColor};
   display: inline-flex;
