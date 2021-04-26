@@ -12,6 +12,7 @@ export declare const variants: {
 export declare type Variants = typeof variants[keyof typeof variants];
 export interface TagProps extends SpaceProps {
     variant?: Variants;
+    color?: string;
     startIcon?: ReactNode;
     endIcon?: ReactNode;
     outline?: boolean;
