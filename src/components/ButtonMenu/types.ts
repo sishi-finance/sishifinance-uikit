@@ -1,14 +1,14 @@
-import { ButtonProps, Sizes, variants } from "../Button/types";
+import { SpaceProps } from "styled-system";
+import { BaseButtonProps, Scale, variants } from "../Button/types";
 
-export type ButtonMenuItemProps = {
+export interface ButtonMenuItemProps extends BaseButtonProps {
   isActive?: boolean;
-  size?: Sizes;
-} & ButtonProps;
+}
 
-export interface ButtonMenuProps {
+export interface ButtonMenuProps extends SpaceProps {
   variant?: typeof variants.PRIMARY | typeof variants.SUBTLE;
   activeIndex?: number;
-  onClick?: (index: number) => void;
-  size?: Sizes;
+  onItemClick?: (index: number) => void;
+  scale?: Scale;
   children: React.ReactElement[];
 }

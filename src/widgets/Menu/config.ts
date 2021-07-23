@@ -1,3 +1,20 @@
+import { LinkStatus } from "./types";
+
+export const status = {
+  LIVE: <LinkStatus>{
+    text: "LIVE",
+    color: "failure",
+  },
+  SOON: <LinkStatus>{
+    text: "SOON",
+    color: "warning",
+  },
+  NEW: <LinkStatus>{
+    text: "NEW",
+    color: "success",
+  },
+};
+
 export const links = [
   {
     label: "Home",
@@ -10,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.sishi.finance",
+        href: "https://exchange.pancakeswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.sishi.finance/#/pool",
+        href: "https://exchange.pancakeswap.finance/#/pool",
       },
     ],
   },
@@ -22,122 +39,129 @@ export const links = [
     label: "Farms",
     icon: "FarmIcon",
     href: "/farms",
+    status: status.LIVE,
   },
   {
     label: "Pools",
     icon: "PoolIcon",
     href: "/syrup",
   },
-  // {
-  //   label: "Lottery",
-  //   icon: "TicketIcon",
-  //   href: "/lottery",
-  // },
-  // {
-  //   label: "NFT",
-  //   icon: "NftIcon",
-  //   href: "/nft",
-  // },
-  // {
-  //   label: "Profile & Teams",
-  //   icon: "GroupsIcon",
-  //   items: [
-  //     {
-  //       label: "Leaderboard",
-  //       href: "/",
-  //     },
-  //     {
-  //       label: "YourProfile",
-  //       href: "/",
-  //     },
-  //   ],
-  //   calloutClass: "rainbow",
-  // },
-  // {
-  //   label: "Info",
-  //   icon: "InfoIcon",
-  //   items: [
-  //     {
-  //       label: "Overview",
-  //       href: "https://pancakeswap.info",
-  //     },
-  //     {
-  //       label: "Tokens",
-  //       href: "https://pancakeswap.info/tokens",
-  //     },
-  //     {
-  //       label: "Pairs",
-  //       href: "https://pancakeswap.info/pairs",
-  //     },
-  //     {
-  //       label: "Accounts",
-  //       href: "https://pancakeswap.info/accounts",
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: "IFO",
-  //   icon: "IfoIcon",
-  //   items: [
-  //     {
-  //       label: "Next",
-  //       href: "/ifo",
-  //     },
-  //     {
-  //       label: "History",
-  //       href: "/ifo/history",
-  //     },
-  //   ],
-  // },
+  {
+    label: "Lottery",
+    icon: "TicketIcon",
+    href: "/lottery",
+  },
+  {
+    label: "NFT",
+    icon: "NftIcon",
+    href: "/nft",
+  },
+  {
+    label: "Team Battle",
+    icon: "TeamBattleIcon",
+    href: "/competition",
+    status: status.SOON,
+  },
+  {
+    label: "Profile & Teams",
+    icon: "GroupsIcon",
+    status: status.LIVE,
+    items: [
+      {
+        label: "Leaderboard",
+        href: "/teams",
+        status: status.NEW,
+      },
+      {
+        label: "YourProfile",
+        href: "/",
+      },
+    ],
+    calloutClass: "rainbow",
+  },
+  {
+    label: "Info",
+    icon: "InfoIcon",
+    items: [
+      {
+        label: "Overview",
+        href: "https://pancakeswap.info",
+      },
+      {
+        label: "Tokens",
+        href: "https://pancakeswap.info/tokens",
+      },
+      {
+        label: "Pairs",
+        href: "https://pancakeswap.info/pairs",
+      },
+      {
+        label: "Accounts",
+        href: "https://pancakeswap.info/accounts",
+      },
+    ],
+  },
+  {
+    label: "IFO",
+    icon: "IfoIcon",
+    items: [
+      {
+        label: "Next",
+        href: "/ifo",
+      },
+      {
+        label: "History",
+        href: "/ifo/history",
+      },
+    ],
+  },
   {
     label: "More",
     icon: "MoreIcon",
     items: [
-      // {
-      //   label: "Voting",
-      //   href: "https://voting.pancakeswap.finance",
-      // },
-      // {
-      //   label: "Github",
-      //   href: "https://github.com/goosedefi/",
-      // },
+      {
+        label: "Voting",
+        href: "https://voting.pancakeswap.finance",
+      },
+      {
+        label: "Github",
+        href: "https://github.com/pancakeswap",
+      },
       {
         label: "Docs",
-        href: 'https://docs.sishi.finance',
+        href: "https://docs.pancakeswap.finance",
       },
       {
         label: "Blog",
-        href: "https://0xsishi.medium.com/",
+        href: "https://pancakeswap.medium.com",
       },
     ],
   },
 ];
 
 export const socials = [
-  // {
-  //   label: "Discord",
-  //   icon: "DiscordIcon",
-  //   href: "https://discord.com/invite/aGQsMxmZbK",
-  //   // items: [
-  //   //   {
-  //   //     label: "English",
-  //   //     href: "https://t.me/sishi_finance",
-  //   //   },
-  //   // ],
-  // },
-  // {
-  //   label: "Telegram",
-  //   icon: "TelegramIcon",
-  //   href: "https://t.me/sishi_finance",
-  // },
-  // {
-  //   label: "Twitter",
-  //   icon: "TwitterIcon",
-  //   href: "https://twitter.com/0xsishi",
-  // },
+  {
+    label: "Telegram",
+    icon: "TelegramIcon",
+    items: [
+      {
+        label: "TG Channel",
+        href: "https://t.me/mbtc_finance",
+      },
+      {
+        label: "TG Group",
+        href: "https://t.me/micro_btc",
+      },
+    ],
+  },
+  {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/mbitcoin_mbtc",
+  },
 ];
 
 export const MENU_HEIGHT = 64;
-export const MENU_ENTRY_HEIGHT = 40;
-export const SIDEBAR_WIDTH_FULL = 200;
+export const MENU_ENTRY_HEIGHT = 48;
+export const SIDEBAR_WIDTH_FULL = 240;
 export const SIDEBAR_WIDTH_REDUCED = 56;

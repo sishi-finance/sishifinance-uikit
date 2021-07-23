@@ -59,13 +59,42 @@ export const Default: React.FC = () => {
 export const CardHeader: React.FC = () => {
   return (
     <div style={{ padding: "32px", width: "500px" }}>
-      <Card>
-        <UIKitCardHeader>
-          <Heading size="xl">Card Header</Heading>
-        </UIKitCardHeader>
-        <CardBody>Body</CardBody>
-        <CardFooter>Footer</CardFooter>
-      </Card>
+      <Row>
+        <Card>
+          <UIKitCardHeader>
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="blue">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="violet">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="bubblegum">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
     </div>
   );
 };
@@ -90,6 +119,11 @@ export const Ribbon: React.FC = () => {
       </Row>
       <Row>
         <Card ribbon={<CardRibbon variantColor="failure" text="Failure" />}>
+          <CardBody style={{ height: "150px" }}>Any Color in the theme</CardBody>
+        </Card>
+      </Row>
+      <Row>
+        <Card ribbon={<CardRibbon variantColor="failure" text="Failure" ribbonPosition="left" />}>
           <CardBody style={{ height: "150px" }}>Any Color in the theme</CardBody>
         </Card>
       </Row>

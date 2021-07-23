@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import random from "lodash/random";
+import { capitalize, random } from "lodash";
+import Box from "../Box/Box";
+import Heading from "../Heading/Heading";
 import Button from "../Button/Button";
 import Progress from "./Progress";
+import { variants } from "./types";
 
 export default {
   title: "Components/Progress",
@@ -16,9 +19,22 @@ export const Default: React.FC = () => {
 
   return (
     <div style={{ padding: "32px", width: "400px" }}>
-      <Progress primaryStep={progress} />
+      {Object.values(variants).map((variant) => {
+        return (
+          <Box key={variant} mb="16px">
+            <Heading size="md" mb="8px">
+              {capitalize(variant)}
+            </Heading>
+            <Progress variant={variant} primaryStep={progress} />
+          </Box>
+        );
+      })}
+      <Heading size="md" mb="8px">
+        Small
+      </Heading>
+      <Progress scale="sm" primaryStep={progress} />
       <div style={{ marginTop: "32px" }}>
-        <Button type="button" size="sm" onClick={handleClick}>
+        <Button type="button" scale="sm" onClick={handleClick}>
           Random Progress
         </Button>
       </div>
@@ -34,10 +50,10 @@ export const WithSecondary: React.FC = () => {
     <div style={{ padding: "32px", width: "400px" }}>
       <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} />
       <div style={{ marginTop: "32px" }}>
-        <Button type="button" size="sm" onClick={() => setPrimaryStep(random(1, 100))}>
+        <Button type="button" scale="sm" onClick={() => setPrimaryStep(random(1, 100))}>
           Random Primary Progress
         </Button>
-        <Button style={{ marginTop: "16px" }} type="button" size="sm" onClick={() => setSecondaryStep(random(1, 100))}>
+        <Button style={{ marginTop: "16px" }} type="button" scale="sm" onClick={() => setSecondaryStep(random(1, 100))}>
           Random Secondary Progress
         </Button>
       </div>
@@ -53,10 +69,10 @@ export const WithSecondaryAndProgressBunny: React.FC = () => {
     <div style={{ padding: "32px", width: "400px" }}>
       <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressBunny />
       <div style={{ marginTop: "32px" }}>
-        <Button type="button" size="sm" onClick={() => setPrimaryStep(random(1, 100))}>
+        <Button type="button" scale="sm" onClick={() => setPrimaryStep(random(1, 100))}>
           Random Primary Progress
         </Button>
-        <Button style={{ marginTop: "16px" }} type="button" size="sm" onClick={() => setSecondaryStep(random(1, 100))}>
+        <Button style={{ marginTop: "16px" }} type="button" scale="sm" onClick={() => setSecondaryStep(random(1, 100))}>
           Random Secondary Progress
         </Button>
       </div>

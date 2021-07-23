@@ -2,23 +2,367 @@ import React from "react";
 import noop from "lodash/noop";
 import { renderWithTheme } from "../../testHelpers";
 import ConnectModal from "../../widgets/WalletModal/ConnectModal";
-import AccountModal from "../../widgets/WalletModal/AccountModal";
 
 it("renders ConnectModal correctly", () => {
   const { asFragment } = renderWithTheme(<ConnectModal login={noop} />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
-      <div
-        class="sc-iBPRYJ gkOLPp"
+      .c5 {
+      color: #280D5F;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .c13 {
+      color: #1FC7D4;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-right: 16px;
+    }
+
+    .c16 {
+      color: #1FC7D4;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .c17 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+
+    .c17:hover {
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+    }
+
+    .c9 {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      fill: #1FC7D4;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+    }
+
+    .c14 {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      fill: #280D5F;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+    }
+
+    .c19 {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      fill: #1FC7D4;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      margin-right: 6px;
+    }
+
+    .c6 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .c0 {
+      min-width: 320px;
+    }
+
+    .c10 {
+      padding: 24px;
+    }
+
+    .c3 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .c7 {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      cursor: pointer;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-letter-spacing: 0.03em;
+      -moz-letter-spacing: 0.03em;
+      -ms-letter-spacing: 0.03em;
+      letter-spacing: 0.03em;
+      line-height: 1;
+      opacity: 1;
+      outline: 0;
+      -webkit-transition: background-color 0.2s,opacity 0.2s;
+      transition: background-color 0.2s,opacity 0.2s;
+      height: 48px;
+      padding: 0 24px;
+      background-color: transparent;
+      color: #1FC7D4;
+      box-shadow: none;
+    }
+
+    .c7:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+      opacity: 0.65;
+    }
+
+    .c7:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+      opacity: 0.85;
+      -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    .c7:disabled,
+    .c7.pancake-button--disabled {
+      background-color: #E9EAEB;
+      border-color: #E9EAEB;
+      box-shadow: none;
+      color: #BDC2C4;
+      cursor: not-allowed;
+    }
+
+    .c12 {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      cursor: pointer;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-letter-spacing: 0.03em;
+      -moz-letter-spacing: 0.03em;
+      -ms-letter-spacing: 0.03em;
+      letter-spacing: 0.03em;
+      line-height: 1;
+      opacity: 1;
+      outline: 0;
+      -webkit-transition: background-color 0.2s,opacity 0.2s;
+      transition: background-color 0.2s,opacity 0.2s;
+      height: 48px;
+      padding: 0 24px;
+      background-color: #EFF4F5;
+      box-shadow: none;
+      color: #1FC7D4;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    .c12:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+      opacity: 0.65;
+    }
+
+    .c12:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+      opacity: 0.85;
+      -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    .c12:disabled,
+    .c12.pancake-button--disabled {
+      background-color: #E9EAEB;
+      border-color: #E9EAEB;
+      box-shadow: none;
+      color: #BDC2C4;
+      cursor: not-allowed;
+    }
+
+    .c15 {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      cursor: pointer;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-letter-spacing: 0.03em;
+      -moz-letter-spacing: 0.03em;
+      -ms-letter-spacing: 0.03em;
+      letter-spacing: 0.03em;
+      line-height: 1;
+      opacity: 1;
+      outline: 0;
+      -webkit-transition: background-color 0.2s,opacity 0.2s;
+      transition: background-color 0.2s,opacity 0.2s;
+      height: 48px;
+      padding: 0 24px;
+      background-color: #EFF4F5;
+      box-shadow: none;
+      color: #1FC7D4;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    .c15:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+      opacity: 0.65;
+    }
+
+    .c15:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+      opacity: 0.85;
+      -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    .c15:disabled,
+    .c15.pancake-button--disabled {
+      background-color: #E9EAEB;
+      border-color: #E9EAEB;
+      box-shadow: none;
+      color: #BDC2C4;
+      cursor: not-allowed;
+    }
+
+    .c8 {
+      padding: 0;
+      width: 48px;
+    }
+
+    .c2 {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: transparent;
+      border-bottom: 1px solid #E7E3EB;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 12px 24px;
+    }
+
+    .c4 {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+
+    .c11 {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .c1 {
+      overflow: hidden;
+      background: #FFFFFF;
+      box-shadow: 0px 20px 36px -8px rgba(14,14,44,0.1),0px 1px 1px rgba(0,0,0,0.05);
+      border: 1px solid #E7E3EB;
+      border-radius: 32px;
+      width: 100%;
+      max-height: 100vh;
+      z-index: 100;
+    }
+
+    .c18 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    @media screen and (min-width:968px) {
+      .c6 {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width:370px) {
+      .c1 {
+        width: auto;
+        min-width: 320px;
+        max-width: 100%;
+      }
+    }
+
+    <div
+        class="c0 c1"
       >
         <div
-          class="sc-fubCfw lbhyFh"
+          class="c2"
         >
           <div
-            class="sc-eCssSg sc-pFZIQ cntkGK ePMCIJ"
+            class="c3 c4"
           >
             <h2
-              class="sc-bdfBwQ sc-hKgILt iEFWFe ESJmc"
+              class="c5 c6"
               color="text"
             >
               Connect to a wallet
@@ -26,11 +370,11 @@ it("renders ConnectModal correctly", () => {
           </div>
           <button
             aria-label="Close the dialog"
-            class="sc-jSgupP SuYtt sc-gKsewC kpTpvg"
-            type="button"
+            class="c7 c8"
+            scale="md"
           >
             <svg
-              class="sc-dlfnbm kPlhyw"
+              class="c9"
               color="primary"
               viewBox="0 0 24 24"
               width="20px"
@@ -43,22 +387,23 @@ it("renders ConnectModal correctly", () => {
           </button>
         </div>
         <div
-          class="sc-eCssSg gIvwGY"
+          class="c10 c3 c11"
         >
           <button
-            class="sc-jSgupP jdAMRQ"
+            class="c12"
             id="wallet-connect-metamask"
+            scale="md"
             style="justify-content: space-between;"
-            type="button"
+            width="100%"
           >
             <div
-              class="sc-bdfBwQ OmpVE"
+              class="c13"
               color="primary"
             >
               Metamask
             </div>
             <svg
-              class="sc-dlfnbm cqTLJf"
+              class="c14"
               color="text"
               viewBox="0 0 96 96"
               width="32px"
@@ -189,26 +534,27 @@ it("renders ConnectModal correctly", () => {
             </svg>
           </button>
           <button
-            class="sc-jSgupP jdAMRQ"
+            class="c12"
             id="wallet-connect-trustwallet"
+            scale="md"
             style="justify-content: space-between;"
-            type="button"
+            width="100%"
           >
             <div
-              class="sc-bdfBwQ OmpVE"
+              class="c13"
               color="primary"
             >
               TrustWallet
             </div>
             <svg
-              class="sc-dlfnbm cqTLJf"
+              class="c14"
               color="text"
               viewBox="0 0 96 96"
               width="32px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g
-                clip-path="url(#clip0)"
+                clip-path="url(#svg1)"
               >
                 <path
                   d="M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z"
@@ -221,7 +567,7 @@ it("renders ConnectModal correctly", () => {
               </g>
               <defs>
                 <clippath
-                  id="clip0"
+                  id="svg1"
                 >
                   <rect
                     fill="white"
@@ -233,19 +579,20 @@ it("renders ConnectModal correctly", () => {
             </svg>
           </button>
           <button
-            class="sc-jSgupP jdAMRQ"
+            class="c12"
             id="wallet-connect-mathwallet"
+            scale="md"
             style="justify-content: space-between;"
-            type="button"
+            width="100%"
           >
             <div
-              class="sc-bdfBwQ OmpVE"
+              class="c13"
               color="primary"
             >
               MathWallet
             </div>
             <svg
-              class="sc-dlfnbm cqTLJf"
+              class="c14"
               color="text"
               viewBox="0 0 96 96"
               width="32px"
@@ -266,19 +613,20 @@ it("renders ConnectModal correctly", () => {
             </svg>
           </button>
           <button
-            class="sc-jSgupP jdAMRQ"
+            class="c12"
             id="wallet-connect-tokenpocket"
+            scale="md"
             style="justify-content: space-between;"
-            type="button"
+            width="100%"
           >
             <div
-              class="sc-bdfBwQ OmpVE"
+              class="c13"
               color="primary"
             >
               TokenPocket
             </div>
             <svg
-              class="sc-dlfnbm cqTLJf"
+              class="c14"
               color="text"
               viewBox="0 0 96 96"
               width="32px"
@@ -301,19 +649,20 @@ it("renders ConnectModal correctly", () => {
             </svg>
           </button>
           <button
-            class="sc-jSgupP jdAMRQ"
+            class="c12"
             id="wallet-connect-walletconnect"
+            scale="md"
             style="justify-content: space-between;"
-            type="button"
+            width="100%"
           >
             <div
-              class="sc-bdfBwQ OmpVE"
+              class="c13"
               color="primary"
             >
               WalletConnect
             </div>
             <svg
-              class="sc-dlfnbm cqTLJf"
+              class="c14"
               color="text"
               viewBox="0 0 96 96"
               width="32px"
@@ -330,19 +679,20 @@ it("renders ConnectModal correctly", () => {
             </svg>
           </button>
           <button
-            class="sc-jSgupP fIDzco"
+            class="c12"
             id="wallet-connect-binance chain wallet"
+            scale="md"
             style="justify-content: space-between;"
-            type="button"
+            width="100%"
           >
             <div
-              class="sc-bdfBwQ OmpVE"
+              class="c13"
               color="primary"
             >
               Binance Chain Wallet
             </div>
             <svg
-              class="sc-dlfnbm cqTLJf"
+              class="c14"
               color="text"
               viewBox="0 0 32 32"
               width="32px"
@@ -394,140 +744,137 @@ it("renders ConnectModal correctly", () => {
               />
             </svg>
           </button>
+          <button
+            class="c12"
+            id="wallet-connect-safepal wallet"
+            scale="md"
+            style="justify-content: space-between;"
+            width="100%"
+          >
+            <div
+              class="c13"
+              color="primary"
+            >
+              SafePal Wallet
+            </div>
+            <svg
+              class="c14"
+              color="text"
+              viewBox="0 0 96 96"
+              width="32px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="48"
+                cy="48"
+                fill="#F5F5F5"
+                r="48"
+              />
+              <path
+                d="M56.5504425,41.9387033 L56.5504425,50.4659601 L47.3948342,50.4659601 L47.3948342,85.5971142 L45.0078131,84.7075452 C43.8992633,84.2955753 42.1136272,83.5937969 39.9052997,82.5918134 L38.8675775,82.1177881 L38.8675775,14.6817622 L47.9569067,11.8769231 L56.5504425,14.5267861 L56.5504425,23.7259307 L47.9569067,21.0669705 L47.3948342,21.2411155 L47.3948342,41.9387033 L56.5504425,41.9387033 Z M16,50.4659926 L16,21.7739797 L36.1702794,15.548296 L36.1702794,24.7052039 L24.526282,28.3200122 L24.526282,41.9387358 L36.1702794,41.9387358 L36.1702794,81.3806284 L33.591244,80.0543973 C25.5662786,75.923652 16,68.9585019 16,59.2339983 L16,54.6496962 L24.526282,54.6496962 L24.526282,59.2339983 C24.526282,61.2460878 25.5734263,63.3605199 27.6426978,65.5373324 L27.6426978,50.4659926 L16,50.4659926 Z M59.1389325,15.3302574 L79.8040306,21.7261873 L79.8040306,50.4659601 L67.6710627,50.4659601 L67.6710627,62.9111544 C67.6710627,62.9111544 64.9581695,66.4674811 59.1464051,69.4451657 C59.1464051,67.0682164 59.1389325,15.3302574 59.1389325,15.3302574 Z M71.2780734,41.9387033 L71.2780734,28.2783928 L67.6710627,27.1649695 L67.6710627,41.9387033 L71.2780734,41.9387033 Z M71.2780734,59.8661186 L71.2780734,54.6495662 L79.8040306,54.6495662 L79.8040306,59.8661186 C79.8040306,74.3588162 58.7760221,82.7005566 52.330058,84.9127828 L49.9859233,85.7230769 L49.9859233,76.7068496 L51.1311866,76.2744112 C61.1591444,72.5004032 71.2780734,65.962818 71.2780734,59.8661186 Z"
+                fill="#000000"
+              />
+            </svg>
+          </button>
+          <button
+            class="c15"
+            id="wallet-connect-coin98 wallet"
+            scale="md"
+            style="justify-content: space-between;"
+            width="100%"
+          >
+            <div
+              class="c13"
+              color="primary"
+            >
+              Coin98 Wallet
+            </div>
+            <svg
+              class="c14"
+              color="text"
+              viewBox="0 0 1000 1000"
+              width="32px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <lineargradient
+                  gradientUnits="userSpaceOnUse"
+                  id="prefix__a"
+                  x1="48.733"
+                  x2="942.955"
+                  y1="944.09"
+                  y2="64.09"
+                >
+                  <stop
+                    offset="0"
+                    stop-color="#151515"
+                  />
+                  <stop
+                    offset="0.994"
+                    stop-color="#252525"
+                  />
+                </lineargradient>
+                <lineargradient
+                  gradientUnits="userSpaceOnUse"
+                  id="prefix__b"
+                  x1="761.394"
+                  x2="275.02"
+                  y1="238.668"
+                  y2="725.043"
+                >
+                  <stop
+                    offset="0"
+                    stop-color="#fdea6a"
+                  />
+                  <stop
+                    offset="0.129"
+                    stop-color="#f6df65"
+                  />
+                  <stop
+                    offset="0.709"
+                    stop-color="#d8b14e"
+                  />
+                  <stop
+                    offset="1"
+                    stop-color="#cc9f45"
+                  />
+                </lineargradient>
+              </defs>
+              <title>
+                Wallet
+              </title>
+              <rect
+                fill="url(#prefix__a)"
+                height="1000"
+                rx="182.477"
+                width="1000"
+              />
+              <path
+                d="M470.273 616.333a133.712 133.712 0 01-133.635 133.835c-73.577 0-133.838-59.857-133.838-133.835h64.237c0 38.381 31.218 69.8 69.6 69.8s69.6-31.42 69.6-69.8zm22.668-210.2c0 86.107-70.2 156.107-156.3 156.107-86.307 0-156.307-70-156.307-156.107s70-156.3 156.307-156.3c86.101-.001 156.3 70.198 156.3 156.304zm-64.033 0a92.272 92.272 0 00-184.544 0c0 50.71 41.564 92.272 92.274 92.272a92.467 92.467 0 0092.27-92.268zm-81.535-26.448v-23.264H325.9v23.268a31.9 31.9 0 00-21.678 30.226 32.315 32.315 0 1064.63 0 31.719 31.719 0 00-21.479-30.226zm472.3 214.372c0 86.107-70 156.107-156.1 156.107s-156.507-70-156.507-156.107c0-86.5 70.4-156.5 156.507-156.5s156.096 70 156.096 156.504zm-63.834 0a92.27 92.27 0 10-184.539 0c0 50.71 41.36 91.874 92.27 91.874s92.265-41.16 92.265-91.87zM663.57 562.24a32.548 32.548 0 00-32.417 32.414 31.709 31.709 0 0021.677 30.425v23.466h21.479v-23.462a32.05 32.05 0 0021.474-30.425 32.506 32.506 0 00-32.217-32.414zm0-312.412c-73.777 0-133.834 59.857-133.834 133.635a132.935 132.935 0 0016.5 64.033 177.809 177.809 0 0156.081-31.022 68.405 68.405 0 01-8.351-33.011 69.6 69.6 0 01139.2 0 70.726 70.726 0 01-8.355 33.011 177.761 177.761 0 0156.08 31.022 132.7 132.7 0 0016.309-64.029c0-73.778-60.057-133.635-133.634-133.635z"
+                fill="url(#prefix__b)"
+              />
+            </svg>
+          </button>
           <a
-            class="sc-bdfBwQ sc-gsTCUz cxXgLd djpNeP sc-iqHYGH hzLTbV"
+            class="c16 c17 c18"
             color="primary"
-            href="https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain"
+            href="https://docs.pancakeswap.finance/get-started/connection-guide"
             rel="noreferrer noopener"
             target="_blank"
           >
             <svg
-              class="sc-dlfnbm gYbuYc"
-              color="primary"
-              viewBox="0 0 20 20"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM9 14H11V16H9V14ZM10.61 4.04C8.55 3.74 6.73 5.01 6.18 6.83C6 7.41 6.44 8 7.05 8H7.25C7.66 8 7.99 7.71 8.13 7.33C8.45 6.44 9.4 5.83 10.43 6.05C11.38 6.25 12.08 7.18 12 8.15C11.9 9.49 10.38 9.78 9.55 11.03C9.55 11.04 9.54 11.04 9.54 11.05C9.53 11.07 9.52 11.08 9.51 11.1C9.42 11.25 9.33 11.42 9.26 11.6C9.25 11.63 9.23 11.65 9.22 11.68C9.21 11.7 9.21 11.72 9.2 11.75C9.08 12.09 9 12.5 9 13H11C11 12.58 11.11 12.23 11.28 11.93C11.3 11.9 11.31 11.87 11.33 11.84C11.41 11.7 11.51 11.57 11.61 11.45C11.62 11.44 11.63 11.42 11.64 11.41C11.74 11.29 11.85 11.18 11.97 11.07C12.93 10.16 14.23 9.42 13.96 7.51C13.72 5.77 12.35 4.3 10.61 4.04Z"
-              />
-            </svg>
-            Learn how to connect
-          </a>
-        </div>
-      </div>
-    </DocumentFragment>
-  `);
-});
-
-it("renders AccountModal correctly", () => {
-  const { asFragment } = renderWithTheme(
-    <AccountModal account="0xb218C5D6aF1F979aC42BC68d98A5A0D796C6aB01" logout={noop} />
-  );
-  expect(asFragment()).toMatchInlineSnapshot(`
-    <DocumentFragment>
-      <div
-        class="sc-iBPRYJ gkOLPp"
-      >
-        <div
-          class="sc-fubCfw lbhyFh"
-        >
-          <div
-            class="sc-eCssSg sc-pFZIQ cntkGK ePMCIJ"
-          >
-            <h2
-              class="sc-bdfBwQ sc-hKgILt iEFWFe ESJmc"
-              color="text"
-            >
-              Your wallet
-            </h2>
-          </div>
-          <button
-            aria-label="Close the dialog"
-            class="sc-jSgupP SuYtt sc-gKsewC kpTpvg"
-            type="button"
-          >
-            <svg
-              class="sc-dlfnbm kPlhyw"
+              class="c19"
               color="primary"
               viewBox="0 0 24 24"
               width="20px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z"
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.74 8.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.55 13.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.58 13.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.64 13.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"
               />
             </svg>
-          </button>
-        </div>
-        <div
-          class="sc-eCssSg gIvwGY"
-        >
-          <div
-            class="sc-bdfBwQ dSimpj"
-            color="text"
-            font-size="20px"
-            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 8px;"
-          >
-            0xb218C5D6aF1F979aC42BC68d98A5A0D796C6aB01
-          </div>
-          <div
-            class="sc-eCssSg gZPLzm"
-          >
-            <a
-              class="sc-bdfBwQ sc-gsTCUz kgxXAa djpNeP"
-              color="primary"
-              href="https://bscscan.com/address/0xb218C5D6aF1F979aC42BC68d98A5A0D796C6aB01"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              View on BscScan
-              <svg
-                class="sc-dlfnbm dJUqYR"
-                color="primary"
-                viewBox="0 0 24 24"
-                width="20px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
-                />
-              </svg>
-            </a>
-            <div
-              class="sc-bdfBwQ sc-crrsfI gRgLU bApUkG"
-              color="text"
-              role="button"
-            >
-              Copy Address
-              <svg
-                class="sc-dlfnbm dJUqYR"
-                color="primary"
-                viewBox="0 0 24 24"
-                width="20px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15 1H4C2.9 1 2 1.9 2 3V16C2 16.55 2.45 17 3 17C3.55 17 4 16.55 4 16V4C4 3.45 4.45 3 5 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM18 21H9C8.45 21 8 20.55 8 20V8C8 7.45 8.45 7 9 7H18C18.55 7 19 7.45 19 8V20C19 20.55 18.55 21 18 21Z"
-                />
-              </svg>
-              <div
-                class="sc-dQppl gOZCze"
-              >
-                Copied
-              </div>
-            </div>
-          </div>
-          <div
-            class="sc-eCssSg iJOemu"
-          >
-            <button
-              class="sc-jSgupP eBuiZt"
-              type="button"
-            >
-              Logout
-            </button>
-          </div>
+            Learn how to connect
+          </a>
         </div>
       </div>
     </DocumentFragment>

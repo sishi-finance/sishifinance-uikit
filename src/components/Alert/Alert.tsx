@@ -7,7 +7,7 @@ import InfoIcon from "../Svg/Icons/Info";
 import { Text } from "../Text";
 import { IconButton } from "../Button";
 import { CloseIcon } from "../Svg";
-import { Flex } from "../Flex";
+import Flex from "../Box/Flex";
 import { AlertProps, variants } from "./types";
 
 interface ThemedIconLabel {
@@ -88,7 +88,7 @@ const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
       </Details>
       {onClick && (
         <CloseHandler>
-          <IconButton size="sm" variant="text" onClick={onClick}>
+          <IconButton scale="sm" variant="text" onClick={onClick}>
             <CloseIcon width="24px" color="currentColor" />
           </IconButton>
         </CloseHandler>
