@@ -1,10 +1,10 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Link } from "react-router-dom";
 import { LogoIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
+import { Link } from "react-router-dom";
 
 interface Props {
   isPushed: boolean;
@@ -67,7 +67,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Sishi home page">
+        <StyledLink href={href} aria-label="Sishi home page">
           {innerLogo}
         </StyledLink>
       ) : (
